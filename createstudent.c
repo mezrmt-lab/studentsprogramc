@@ -20,3 +20,4 @@ Student *createStudent(char _name[], int _age, float _average)
     new->Next = NULL;
     return new;
 }
+
