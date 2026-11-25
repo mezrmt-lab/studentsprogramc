@@ -21,3 +21,13 @@ Student *createStudent(char _name[], int _age, float _average)
     return new;
 }
 
+void showlist(Student *head)
+{
+    Student *current = head;
+    while (current != NULL)
+    {
+        printf("Name: %s, Age: %d, Average: %.1f\n", current->name, current->age, current->average);
+        current = current->Next;
+    }
+}
+
