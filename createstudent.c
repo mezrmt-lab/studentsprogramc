@@ -31,3 +31,15 @@ void showlist(Student *head)
     }
 }
 
+int listlength(Student *head)
+{
+    int len = 0;
+    Student *current = head;
+    while (current != NULL)
+    {
+        current = current->Next;
+        len++;
+    }
+    return len;
+}
+
